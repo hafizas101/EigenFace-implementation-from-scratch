@@ -12,7 +12,7 @@ def face_rec(image):
     # ---------------------- Training --------------------------
 
 
-    filenames = glob.glob("400X400/*.jpg")
+    filenames = glob.glob("train_images/*.jpg")
     filenames.sort()
     # print(filenames)
     images = [cv2.imread(img, 0) for img in filenames]
